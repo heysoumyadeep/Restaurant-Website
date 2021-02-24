@@ -463,6 +463,8 @@ body{
 @media (max-width:768px){
     .navbar{
         opacity: 0.95;
+        width: 100vw;
+        max-width: 100vh;
     }
 
     .navbar-container input[type='checkbox'],
@@ -473,7 +475,7 @@ body{
     .navbar-container{
         display: block;
         position: relative;
-        height: 64px;
+        height: 64px;   
     }
 
     .navbar-container input[type='checkbox']{
@@ -520,7 +522,7 @@ body{
 
     .navbar .menu-items{
         padding-top: 100px;
-        background: #fff;
+        background: #FFF;
         height: 100vh;
         max-width: 300px;
         transform: translate(-150%);
@@ -530,6 +532,8 @@ body{
         padding-left: 50px;
         transition: transform 0.4s ease-in-out;
         box-shadow: 5px 0px 10px 0px #aaa;
+        z-index: 1;
+        position: relative;
     }
 
     .navbar .menu-items li{

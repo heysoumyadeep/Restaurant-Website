@@ -119,6 +119,11 @@ body{
     font-size: 1.6rem;
 }
 
+.showcase-container p{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
 .main-title{
     text-transform: uppercase;
 }
@@ -133,6 +138,7 @@ body{
 .about-wrapper{
     display: flex;
     flex-wrap: wrap;
+    box-shadow: 0px 5px 10px 0px #aaa;
 }
 
 #about h2{
@@ -152,6 +158,7 @@ body{
 .about-img{
     flex: 1 1 400px;
     padding: 30px;
+
     transform: translateX(150%);
     animation: about-img-animation 1s ease-in-out forwards;
 }
@@ -213,6 +220,7 @@ body{
     height: 300px;
     object-fit: cover;
     object-position: center;
+    box-shadow: 0px 5px 10px 0px #aaa;
 }
 
 .img-container{
@@ -276,6 +284,7 @@ body{
 }
 
 .food-menu-container{
+    
     display: flex;
     flex-wrap: wrap;
     padding: 50px 0px 30px 0px;
@@ -291,6 +300,7 @@ body{
 }
 
 .food-menu-item{
+    
     display: flex;
     flex: 1 1 600px;
     justify-content: space-evenly;
@@ -298,13 +308,16 @@ body{
 }
 
 .food-description{
-    margin: auto 1.5rem;
+    margin: auto 3rem;
+    padding: 0 0 2rem 0;
+
 }
 
 .food-title{
     font-size: 2.2rem;
     font-weight: 400;
     color: #444;
+    margin-bottom: 1rem;
 }
 
 .food-description p{
@@ -314,8 +327,10 @@ body{
 }
 
 .food-description .food-price{
+    margin-top: 1rem;
     color: #117964;
     font-weight: 700;
+    font-size: 1.6rem;
 }
 
 /* #################### TESTIMONIALS #################### */
@@ -335,7 +350,7 @@ body{
 
 .testimonial-container{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     font-size: 1.6rem;
     padding: 1rem;
 }
@@ -352,6 +367,11 @@ body{
 .testimonial-box{
     text-align: center;
     padding: 1rem;
+    flex: 1 0;
+}
+
+.testimonial-container .customer-detail .customer-name{
+    padding: 2rem 0;
 }
 
 .customer-photo img{
@@ -372,6 +392,7 @@ body{
 }
 
 .contact-container{
+    box-shadow: 0px 5px 10px 0px #aaa;
     display: flex;
     background: #FFF;
     max-width: 1000px;
@@ -575,10 +596,35 @@ body{
         margin-bottom: 1rem;
     }
     
+    .testimonial-container{
+        display: flex;
+        flex-direction: column ;
+    }
+
+    .testimonial-container .testimonial-text{
+        order: 1;
+    }
+
+    .testimonial-container .star-rating{
+        order: 2;
+    }
+
+    .testimonial-container .customer-detail{
+        order: 3;
+        margin: 1rem 0;
+    }
+
+    .testimonial-container .customer-detail .customer-name{
+        padding: 1rem 0 0 0;
+    }
+
+    
     .testimonial-container .testimonial-box{
         display: flex;
         width: 100%;
-        flex-direction: row-reverse;
+        flex: 1 1;
+        flex-direction: column ;
+        justify-content: space-evenly;
     }
 }
 
